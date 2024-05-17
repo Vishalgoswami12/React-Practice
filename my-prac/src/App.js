@@ -7,12 +7,13 @@ function App() {
  
   return (
      <div className="App">
-      {/* <Router>
+      <Router>
         <Routes>
           <Route path="/" element={<Timer/>}></Route>
+          <Route path="/next" element={<DisplayData/>}/>
         </Routes>
-      </Router> */}
-      <Timer/>
+      </Router>
+      {/* <Timer/> */}
      {/* <DisplayData/> */}
     </div>
   );

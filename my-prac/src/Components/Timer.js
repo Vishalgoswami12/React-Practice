@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-
+import {Link} from "react-router-dom"
 function Timer(){
     const [count, setCount] = useState(0);
     const [input, setInput] = useState("");
@@ -9,6 +9,9 @@ function Timer(){
       };
     return(
         <>
+        <Link to="/next">
+        <button>Next</button>
+        </Link>
         <h2>{count}</h2>
       <input
         type="number"
