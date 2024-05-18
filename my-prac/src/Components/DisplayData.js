@@ -29,17 +29,28 @@ function DisplayData() {
   return (
     <>
     <input type="text" value={input} placeholder="search" onChange={(e) => setInput(e.target.value)}/>
+    <div style={{display:"flex",justifyContent:"space-between", flexWrap:"wrap", backgroundColor:"gray",gap:10}}>
       {data &&
         data.slice(0, display).filter((ele) => ele.title.toLowerCase().includes(input.toLocaleLowerCase()) || ele.body.toLowerCase().includes(input.toLowerCase()) ).map((ele) => {
           const { id, title, body } = ele;
           return (
-            <div key={id} onClick={() => handleChange(id)}>
+           
+            <div  style={{
+                border: "1px solid black",
+                padding: "10px",
+                width: "calc(20% - 10px)",
+                minHeight: "150px",
+                boxSizing: "border-box",
+                overflow: "hidden",
+                position: "relative",
+              }} key={id} onClick={() => handleChange(id)}>
               <h2>{id}</h2>
               <h3>{title}</h3>
               {show === id ? <p>{body}</p> : ""}
             </div>
           );
         })}
+         </div>
       <button onClick={handleButton}>
         {active ? "Show Less" : "Show More"}
       </button>

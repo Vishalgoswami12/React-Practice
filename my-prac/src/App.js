@@ -6,15 +6,14 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 function App() {
  
   return (
-     <div className="App">
+     <div className="App" style={{padding:10}}>
       <Router>
         <Routes>
           <Route path="/" element={<Timer/>}></Route>
           <Route path="/next" element={<DisplayData/>}/>
         </Routes>
       </Router>
-      {/* <Timer/> */}
-     {/* <DisplayData/> */}
+     
     </div>
   );
 }
