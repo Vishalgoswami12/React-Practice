@@ -13,6 +13,7 @@ function Timer(){
         <Link to="/card">
         <button style={{color:"orange"}} >Next</button>
         </Link>
+        <Link to="/movie"><button> Watch Movie</button></Link>
         <h2>{count}</h2>
       <input
         type="number"

@@ -28,6 +28,13 @@ function DisplayData() {
 
   return (
     <>
+    <div>
+    <Link to="/movie">
+        <button style={{color:"orange"}}>
+            Watch Movie
+        </button>
+    </Link>
+    </div>
     <input type="text" value={input} placeholder="search" onChange={(e) => setInput(e.target.value)}/>
     <div>
         <button >Submit</button>
