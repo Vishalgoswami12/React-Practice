@@ -9,8 +9,9 @@ function Timer(){
       };
     return(
         <>
+        <div style={{backgroundColor:"lightblue",height:"100vh",padding:20}}>
         <Link to="/card">
-        <button>Next</button>
+        <button style={{color:"orange"}} >Next</button>
         </Link>
         <h2>{count}</h2>
       <input
@@ -18,7 +19,10 @@ function Timer(){
         placeholder="Enter"
         onChange={(e) => setInput(e.target.value)}
       />
+      <div style={{marginTop:20}}>
         <button onClick={handleIncrement}>Increase</button>
+        </div>
+        </div>
         </>
     )
 }
