@@ -9,7 +9,7 @@ function Timer(){
       };
     return(
         <>
-        <Link to="/next">
+        <Link to="/card">
         <button>Next</button>
         </Link>
         <h2>{count}</h2>

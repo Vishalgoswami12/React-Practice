@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import {Link} from "react-router-dom"
 function DisplayData() {
   const [data, setData] = useState([]);
   const [display, setDisplay] = useState(5);
@@ -47,6 +47,9 @@ function DisplayData() {
               <h2>{id}</h2>
               <h3>{title}</h3>
               {show === id ? <p>{body}</p> : ""}
+              <Link to={`/card/${id}`}>
+                <button>Details</button>
+              </Link>
             </div>
           );
         })}

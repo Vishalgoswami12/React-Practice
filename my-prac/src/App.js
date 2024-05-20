@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Timer/>}></Route>
-          <Route path="/next" element={<DisplayData/>}/>
+          <Route path="/card" element={<DisplayData/>}/>
         </Routes>
       </Router>
      
