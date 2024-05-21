@@ -8,7 +8,7 @@ function DetailsPage(){
         fetch("https://jsonplaceholder.typicode.com/posts/")
         .then((res) => res.json())
         .then((data) => setData(data.find(ele => ele.id === Number(id))))
-    })
+    },[])
 
     return(
         <>
